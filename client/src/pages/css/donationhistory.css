@@ -1,0 +1,68 @@
+/* Container Style for Donation History */
+.container-history {
+    max-width: 900px; /* Updated to match the profile card width */
+    margin: 0px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, rgb(242, 166, 242), #bec5cc);
+    border-radius: 10px;
+  }
+  
+  /* Title Style */
+  h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Table Styling */
+  table {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+  }
+  
+  /* Table Header Styling */
+  th, td {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  /* Table Header Customization */
+  thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Zebra Striping for Table Rows */
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Status Badge Styling */
+  .badge {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  
+    th, td {
+      padding: 8px;
+    }
+  }
+  
