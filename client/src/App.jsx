@@ -9,8 +9,16 @@ import {
     Dashboard,
     Userprofile,
     Donationhistory,
-    OrganRequestForm
+    OrganRequestForm,
+    Faq,
+    DoctorDashboard,
+    Appointments,
+    PatientPage,
+    OrganRequest,
+    Operationshedule,
+    
 } from './pages';
+
 
 const router = createBrowserRouter(
   [
@@ -37,8 +45,8 @@ const router = createBrowserRouter(
       element: <Dashboard />,
       children: [
         {
-          index: true, // This will be the default route
-          element: <Userprofile />, // This renders by default for /dashboard
+          index: true,
+          element: <Userprofile />, 
         },
         {
           path: 'profile',
@@ -55,9 +63,37 @@ const router = createBrowserRouter(
         {
           path:'organrequest',
           element:<OrganRequestForm/>
+        },{
+          path:'faq',
+          element:<Faq/>
         }
       ],
     },
+    {
+      path:'doctordashboard',
+      element:<DoctorDashboard/>,
+      children:[
+        {
+          index: true,  
+          element: <Appointments/>
+        },
+      
+        {
+          path: 'appointments',
+          element: <Appointments />,
+        },{
+          path:'patients',
+          element:<PatientPage/>
+        },{
+          path:'organrequest',
+          element:<OrganRequest/>
+        },{
+          path:'operationschedule',
+          element:<Operationshedule/>
+        }
+        
+      ]
+    }
   ]
 );
 

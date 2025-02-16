@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom'
 import YouTube from "react-youtube";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import banner1 from '../assets/images/organ1.jpeg'
+// import banner1 from '../assets/images/organ1.jpeg'
 import banner2 from '../assets/images/organ2.jpeg'
 import Navbar from '../components/Navbar';
 import Marquee from "react-fast-marquee";
+// import { motion } from "framer-motion";
+import DonarCard from '../components/DonarCard'
 
 
 const LandingPage = () => {
@@ -41,18 +43,6 @@ const LandingPage = () => {
                 <img className='img-fluid' src={banner2} alt="" />
             </div>
 
-            {/* <div id="donationCarousel" className=" carousel slide" data-bs-ride="carousel" >
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src={banner2} className="d-block w-100" alt="Slide 1" />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={banner1} className="d-block w-100" alt="Slide 2" />
-                    </div>
-
-                </div>
-
-            </div> */}
 
 
             <header className="mt-5 bg-success container-fluid text-white text-center py-5" data-aos="fade-left"
@@ -73,6 +63,16 @@ const LandingPage = () => {
                     <YouTube className='d-inline' videoId="V9oXkucoJUE" opts={options} onReady={onReady} />
                 </div>
             </Marquee>
+
+
+            <div className="container-fluid">
+                <h1 className="text-center mt-5 text-white">Organ Donation Records</h1>
+                <div className="donor-container">
+                    {Array.from({ length: 9 }).map((_, index) => (
+                        <DonarCard key={index} />
+                    ))}
+                </div>
+            </div>
 
             <section id="why" className="container my-5 text-black" data-aos="fade-up"
                 data-aos-duration="3000">
@@ -108,10 +108,12 @@ const LandingPage = () => {
             </section>
 
 
-            <section id="contact" className="container my-5 text-black" data-aos="fade-right"
+
+
+            <section id="contact" className="container my-5 text-black w-50" data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                <h2 className="text-center mb-4">Get in Touch</h2>
+                <h2 className="text-center mb-4">Any Query ? Call Us</h2>
                 <form>
                     <div className="mb-3">
                         <label className="form-label">Name</label>

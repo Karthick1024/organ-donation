@@ -22,7 +22,7 @@ const LoginForm = () => {
 
     return (
         <div className="login-container">
-            <div className="row  login-form justify-content-center">
+            <div className="row mx-auto d-flex  pt-5 justify-content-center  login-form">
                 <div className="col-md-6">
                     <div className="card p-4 mt-5 shadow-sm">
                         <h2 className="text-center text-dark mb-4">Login</h2>
@@ -43,7 +43,7 @@ const LoginForm = () => {
                                     <div className='d-flex flex-column flex-md-row align-items-center justify-content-around gap-3'>
                                         <button type="submit" className="btn btn-primary w-50">Login</button>
                                         <span className='text-center text-md-start'>
-                                            New User ? Register <Link to='/userregister'>Sign Up</Link>
+                                            New User ? <Link to='/userregister'>Sign Up</Link>
                                         </span>
                                     </div>
 

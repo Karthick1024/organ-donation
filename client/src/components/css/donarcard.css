@@ -1,0 +1,66 @@
+
+
+/* Donor Grid Layout */
+.donor-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Each Donor Card */
+.donor-card {
+  padding: 10px;
+}
+
+.card {
+  border-radius: 15px;
+  transition: box-shadow 0.3s ease-in-out;
+  text-align: center;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  padding: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Text Styling */
+.donor-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffeb3b;
+}
+
+.organ-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ff9800;
+}
+
+.patient-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff3d00;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Responsive Grid */
+@media (min-width: 992px) {
+  .donor-card {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .donor-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .donor-card {
+    width: 100%;
+  }
+}

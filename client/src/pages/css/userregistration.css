@@ -1,9 +1,8 @@
 .user-registration-container{
     background: url('../../assets/images/world-blood-donor-background-free-vector.jpg');
     background-size: cover;
-    /* height: 740px; */
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
-    /* display: inline-block;  */
+    
 }
