@@ -15,8 +15,16 @@ export {default as Faq} from './Faq'
 // doctor routes
 
 export {default as DoctorDashboard} from './Doctor/DoctorDashboard'
-
+export {default as DoctorSignup} from './Doctor/DoctorSignup'
 export {default as Appointments} from './Doctor/Appointments'
 export {default as PatientPage} from './Doctor/PatientPage'
 export {default as OrganRequest} from './Doctor/OrganRequest'
 export {default as Operationshedule} from './Doctor/Operationshedule'
+
+
+//admin routes
+
+export {default as AdminDashboard} from './Admindashboard/AdminDashboard'
+export {default as DonorsTable} from './Admindashboard/DonorsTable'
+export {default as DoctorsTable} from './Admindashboard/DoctorsTable'
+export {default as Accountrequest} from './Admindashboard/Accountrequest'

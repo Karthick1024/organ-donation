@@ -14,6 +14,7 @@ const Navbar = () => {
                     <li className="nav-item"><a className="nav-link" href="#why">Why Donate?</a></li>
                     <li className="nav-item"><a className="nav-link" href="#how">How It Works</a></li>
                     <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
+                    <li className="nav-item"><Link className="nav-link" to='/doctor-signup'>Doctor</Link></li>
                 </ul>
             </div>
           

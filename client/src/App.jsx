@@ -16,6 +16,11 @@ import {
     PatientPage,
     OrganRequest,
     Operationshedule,
+    AdminDashboard,
+    DonorsTable,
+    DoctorsTable,
+    DoctorSignup,
+    Accountrequest,
     
 } from './pages';
 
@@ -37,7 +42,10 @@ const router = createBrowserRouter(
         {
           path: 'userregister',
           element: <Userregistration />,
-        },
+        },{
+          path:'doctor-signup',
+          element:<DoctorSignup/>
+        }
       ],
     },
     {
@@ -90,8 +98,29 @@ const router = createBrowserRouter(
         },{
           path:'operationschedule',
           element:<Operationshedule/>
+        },
+       
+      ]
+    },{
+      path:'admindashboard',
+      element:<AdminDashboard/>,
+      children:[
+        {
+          index:true,
+          element:<DonorsTable/>
+        },
+        {
+          path:'donors-table',
+          element:<DonorsTable/>
+        },{
+          path:'doctorstable',
+          element:<DoctorsTable/>,
+
+          
+        },{
+          path:'account-request',
+          element:<Accountrequest/>
         }
-        
       ]
     }
   ]

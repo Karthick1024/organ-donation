@@ -10,7 +10,7 @@ import Marquee from "react-fast-marquee";
 // import { motion } from "framer-motion";
 import DonarCard from '../components/DonarCard'
 
-
+import './css/Landingpage.css'
 const LandingPage = () => {
 
     useEffect(() => {
@@ -80,7 +80,14 @@ const LandingPage = () => {
                 <p className='text-center'>Thousands of people are waiting for life-saving transplants. By becoming a donor, you can give someone a second chance at life.</p>
             </section>
 
-
+            <div className="content">
+                
+                <div className="summary-cards">
+                    <div className="card card-shadow">Total Donors: 120</div>
+                    <div className="card card-shadow">Total Recipients: 95</div>
+                    <div className="card card-shadow">Successful Transplants: 60</div>
+                </div>
+            </div>
 
 
             <section id="how"

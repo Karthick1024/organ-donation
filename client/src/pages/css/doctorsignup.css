@@ -1,0 +1,80 @@
+/* Doctor Signup Page Styling */
+
+
+.doctor-signup-container {
+    width: 100%;
+    
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+.doctor-form{
+    max-width: 500px;
+}
+
+.doctor-signup-container h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(21, 1, 1, 0.1);
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input, select, button, textarea {
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4facfe;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(79, 172, 254, 0.5);
+}
+
+button {
+    background: #4facfe;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #3a8dde;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .doctor-signup-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input, select, button, textarea {
+        font-size: 14px;
+    }
+}

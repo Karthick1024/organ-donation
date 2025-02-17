@@ -40,7 +40,7 @@ import "./css/donarcard.css"; // Import custom styles
         whileTap={{ scale: 0.95 }}
         data-aos="fade-up"
       >
-        <div className="card shadow-lg p-4">
+        <div className="card-donar shadow-lg p-4">
           <motion.h3
             className="donor-name"
             key={currentDonor.donor}
