@@ -1,0 +1,117 @@
+/* User List Page Styling */
+.user-list-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    overflow-x: auto;
+}
+
+.user-list-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Table Styling */
+.user-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    table-layout: fixed; /* Ensures equal width columns */
+}
+
+.user-list-table thead {
+    background: #4facfe;
+    color: white;
+}
+
+.user-list-table th, 
+.user-list-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.user-list-table th {
+    font-weight: bold;
+}
+
+.user-list-table tbody tr {
+    background: #fff;
+    transition: 0.3s;
+}
+
+.user-list-table tbody tr:hover {
+    background: #f1f1f1;
+}
+
+/* Align table headers and body properly */
+.user-list-table th:nth-child(1), 
+.user-list-table td:nth-child(1) {
+    width: 25%;
+}
+
+.user-list-table th:nth-child(2), 
+.user-list-table td:nth-child(2) {
+    width: 15%;
+}
+
+.user-list-table th:nth-child(3), 
+.user-list-table td:nth-child(3) {
+    width: 15%;
+}
+
+.user-list-table th:nth-child(4), 
+.user-list-table td:nth-child(4) {
+    width: 25%;
+}
+
+.user-list-table th:nth-child(5), 
+.user-list-table td:nth-child(5) {
+    width: 20%;
+    text-align: center;
+}
+
+/* Button Styling */
+.delete-btn {
+    padding: 8px 12px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .user-list-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .user-list-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .delete-btn {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}

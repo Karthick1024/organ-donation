@@ -35,8 +35,8 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </Link>
         </li>
         <li>
-          <Link to="/admindashboard/settings">
-            <FaCog /> <span className={isOpen ? "show" : "hide"}>Settings</span>
+          <Link to="/admindashboard/user-accounts">
+            <FaCog /> <span className={isOpen ? "show" : "hide"}>User Accounts</span>
           </Link>
         </li>
       </ul>

@@ -21,6 +21,7 @@ import {
     DoctorsTable,
     DoctorSignup,
     Accountrequest,
+    UserList,
     
 } from './pages';
 
@@ -120,6 +121,9 @@ const router = createBrowserRouter(
         },{
           path:'account-request',
           element:<Accountrequest/>
+        },{
+          path:'user-accounts',
+          element:<UserList/>
         }
       ]
     }
